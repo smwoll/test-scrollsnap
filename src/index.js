@@ -24,7 +24,7 @@ function detectTrackPad(e) {
     if (trackPadDetected == 0) {
       
   if (e.wheelDeltaY) {
-    if (e.wheelDeltaY < 120) {
+    if (e.wheelDeltaY > -120 && e.wheelDeltaY < 120) {
       isTrackpad = true;
     }
   }
