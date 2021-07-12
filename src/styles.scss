@@ -1,0 +1,61 @@
+$primary-color: white;
+$bg: black;
+h1 {
+  color: $primary-color;
+  background-color: $bg;
+}
+
+html:not(.prevent-scroll-snap) {
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.sitewrap {
+
+}
+
+.snap-alert {
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  width: 200px;
+  height: 50px;
+  display: none;
+  z-index: 99;
+  text-align: center;
+
+  .prevent-scroll-snap & {
+    display: block;
+  }
+}
+
+.panel {
+  margin: 0;
+  min-height: 100vh;
+  scroll-snap-align: start;
+}
+
+.panel-bg {
+  background-color: blue;
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  &.cyan {
+    background-color: cyan;
+  }
+  &.pink {
+    background-color: pink;
+  }
+  &.green {
+    background-color: greenyellow;
+  }
+  &.fuschia {
+    background-color: fuchsia;
+  }
+}
