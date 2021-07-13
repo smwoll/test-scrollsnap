@@ -2,6 +2,8 @@ import "./styles.scss";
 console.log("hello world!");
 
 const preventScrollSnapClass = document.querySelector('.prevent-scroll-snap');
+const debugInner = document.querySelector('.debug-inner');
+const debugInnerOngoing = document.querySelector('.debug-ongoing');
 
 const html = document.querySelector('html');
 // let touchCount = 0;
@@ -22,19 +24,25 @@ let trackPadDetected = 0;
 function detectTrackPad(e) {
     var isTrackpad = false;
     if (trackPadDetected == 0) {
+        debugInner.innerHTML = 'wheelDelta is ' + e.wheelDelta + '<br>' +
+        'wheelDeltaY is ' + e.wheelDeltaY + '<br>' +
+        'deltaMode is ' + e.deltaMode + '<br>';
       
   if (e.wheelDeltaY) {
+      console.log('INITIAL:' + e.wheelDeltaY);
     if (e.wheelDeltaY > -120 && e.wheelDeltaY < 120) {
       isTrackpad = true;
     }
   }
 //   else if (e.deltaMode === 0) {
 //     isTrackpad = true;
+//     console.log('deltaMode = ' + e.deltaMode)
 //   }
   console.log('wheelDeltaY:' + e.wheelDeltaY);
   console.log('wheelDelta:' + e.wheelDelta);
   console.log(isTrackpad ? "Trackpad detected" : "Mousewheel detected");
   trackPadDetected ++;  
+  console.log('Detection count: ' + trackPadDetected);
 
   if (isTrackpad === false) {
       html.classList.add('prevent-scroll-snap')
@@ -48,7 +56,9 @@ if (trackPadDetected == 0) {
 }
 
 document.addEventListener("wheel", function(e){
-    console.log(e.wheelDelta);
+    debugInnerOngoing.innerHTML = 'wheelDelta is ' + e.wheelDelta + '<br>' +
+        'wheelDeltaY is ' + e.wheelDeltaY + '<br>' +
+        'deltaMode is ' + e.deltaMode + '<br>';
 })
 
 // if (!preventScrollSnapClass && touchCount == 0 && isTrackpad === false) {
@@ -56,3 +66,8 @@ document.addEventListener("wheel", function(e){
 //     html.classList.add('prevent-scroll-snap')
 // }, false);
 // }
+const testNum = 110;
+
+if (testNum > -120 && testNum < 120) {
+    console.log("within");
+}
