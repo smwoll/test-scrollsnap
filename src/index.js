@@ -66,8 +66,3 @@ document.addEventListener("wheel", function(e){
 //     html.classList.add('prevent-scroll-snap')
 // }, false);
 // }
-const testNum = 110;
-
-if (testNum > -120 && testNum < 120) {
-    console.log("within");
-}
