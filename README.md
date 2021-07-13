@@ -1,6 +1,17 @@
 # test-scrollsnap
 
-Empty project.
+This is a simple project to test scroll wheel behavior. I found a weird bug with chrome, CSS scroll snap, and certain mouse wheels (appears to be when a mouse wheel click registers a delta of more than +/-120).
+
+[SCROLLSNAPPING](https://scrollsnap-testing.netlify.app/) - example site
+
+Check out the docs on wheel events:
+
+[Element: wheel event - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/wheel_event)
+
+[WheelEvent - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent)
+
+*From MDN:* *Important: This is the standard wheel event interface to use.* Old versions of browsers implemented the non-standard and non-cross-browser-compatible  [MouseWheelEvent](https://developer.mozilla.org/en-US/docs/Web/API/MouseWheelEvent)  and  [MouseScrollEvent](https://developer.mozilla.org/en-US/docs/Web/API/MouseScrollEvent)  interfaces. Use this interface and avoid the non-standard ones.
+
 
 ## How to run on localhost
 
