@@ -34,10 +34,7 @@ function detectTrackPad(e) {
       isTrackpad = true;
     }
   }
-//   else if (e.deltaMode === 0) {
-//     isTrackpad = true;
-//     console.log('deltaMode = ' + e.deltaMode)
-//   }
+  
   console.log('wheelDeltaY:' + e.wheelDeltaY);
   console.log('wheelDelta:' + e.wheelDelta);
   console.log(isTrackpad ? "Trackpad detected" : "Mousewheel detected");
@@ -60,9 +57,3 @@ document.addEventListener("wheel", function(e){
         'wheelDeltaY is ' + e.wheelDeltaY + '<br>' +
         'deltaMode is ' + e.deltaMode + '<br>';
 })
-
-// if (!preventScrollSnapClass && touchCount == 0 && isTrackpad === false) {
-//     html.addEventListener('wheel',function(event){
-//     html.classList.add('prevent-scroll-snap')
-// }, false);
-// }
