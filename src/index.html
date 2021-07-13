@@ -24,6 +24,16 @@
         <div class="panel">
             <div class="panel-bg">
                 <h2>Panel</h2>
+                <p>
+                    CSS Scroll Snap may have a pretty weird bug in chrome with some mice, causing the snapped panels to
+                    jump more than one at a time. I set this project up to test
+                    the wheel events on mice and to disable scroll snap if the wheelDelta is too great. For the issues I
+                    was seeing, stopping scroll snap when the very first wheelDelta is more than 120 prevented the
+                    browser from snapping way too many panels. This is chrome-specific, but the data on the wheel event
+                    should still be valid for other browsers!
+                </p>
+                <p>Check out the GitHub repo <a
+                        href="https://github.com/smwoll/test-scrollsnap"><strong>here.</strong></a></p>
             </div>
 
         </div>
