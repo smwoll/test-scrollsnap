@@ -10,8 +10,9 @@ Check out the docs on wheel events:
 
 [WheelEvent - Web APIs | MDN](https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent)
 
-*From MDN:* *Important: This is the standard wheel event interface to use.* Old versions of browsers implemented the non-standard and non-cross-browser-compatible  [MouseWheelEvent](https://developer.mozilla.org/en-US/docs/Web/API/MouseWheelEvent)  and  [MouseScrollEvent](https://developer.mozilla.org/en-US/docs/Web/API/MouseScrollEvent)  interfaces. Use this interface and avoid the non-standard ones.
+_From MDN:_ _Important: This is the standard wheel event interface to use._ Old versions of browsers implemented the non-standard and non-cross-browser-compatible [MouseWheelEvent](https://developer.mozilla.org/en-US/docs/Web/API/MouseWheelEvent) and [MouseScrollEvent](https://developer.mozilla.org/en-US/docs/Web/API/MouseScrollEvent) interfaces. Use this interface and avoid the non-standard ones.
 
+Relevant issue on stack overflow - [html - Scroll snap CSS skipping elements - Stack Overflow](https://stackoverflow.com/questions/61726927/scroll-snap-css-skipping-elements)
 
 ## How to run on localhost
 
@@ -38,4 +39,3 @@ npm run build
 ## Credits
 
 Made with [createapp.dev](https://createapp.dev/)
-
