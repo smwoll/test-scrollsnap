@@ -14,6 +14,8 @@ _From MDN:_ _Important: This is the standard wheel event interface to use._ Old 
 
 Relevant issue on stack overflow - [html - Scroll snap CSS skipping elements - Stack Overflow](https://stackoverflow.com/questions/61726927/scroll-snap-css-skipping-elements)
 
+CSS Trick on scroll snap - [Practical CSS Scroll Snapping | CSS-Tricks](https://css-tricks.com/practical-css-scroll-snapping/)
+
 ## How to run on localhost
 
 First install dependencies:
